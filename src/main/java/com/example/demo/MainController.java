@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
     @RequestMapping(value="/post", method=RequestMethod.POST)
-    public Data doPost(@RequestBody Data data) {
+    public DataObject doPost(@RequestBody DataObject data) {
         System.out.println(data);
         return data;
     }
